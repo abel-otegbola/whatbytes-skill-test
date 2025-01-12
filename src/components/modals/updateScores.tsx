@@ -23,7 +23,6 @@ export default function UpdateScores({ data, setData, setOpenModal, img }: { dat
                 <Formik
                     initialValues={{ rank: data.rank, percentile: data.percentile, score: data.score}}
                     validationSchema={updateSchema}
-                    validateOnChange={true}
                     validateOnBlur={true}
                     onSubmit={( values, { setSubmitting }) => {
                         setData(values)
@@ -56,7 +55,7 @@ export default function UpdateScores({ data, setData, setOpenModal, img }: { dat
                                     <span className="p-2 px-3 rounded-full bg-primary text-white">2</span>
                                     <span>Update your <b>Percentile</b></span>
                                 </h1>
-                                <Input name="percentile" value={values.percentile} error={touched.percentile ? errors.percentile : ""} type="number" max={100} className="flex-1" onChange={handleChange} />
+                                <Input name="percentile" value={values.percentile} error={touched.percentile ? errors.percentile : ""} type="number" className="flex-1" onChange={handleChange} />
                             </div>
 
                             {/* score label and input field */}
@@ -65,7 +64,7 @@ export default function UpdateScores({ data, setData, setOpenModal, img }: { dat
                                     <span className="p-2 px-3 rounded-full bg-primary text-white">3</span>
                                     <span>Update your <b>Current Score (out of 15)</b></span>
                                 </h1>
-                                <Input name="score" value={values.score} error={touched.score ? errors.score : ""} type="number" max={15} className="flex-1" onChange={handleChange} />
+                                <Input name="score" value={values.score} error={touched.score ? errors.score : ""} type="number" className="flex-1" onChange={handleChange} />
                             </div>
 
                             <div className="flex justify-end gap-6">
