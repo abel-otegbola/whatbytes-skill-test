@@ -69,7 +69,7 @@ export default function Home() {
             <div className="flex justify-between gap-6 items-center mb-6">
               <div className="flex flex-col gap-6">
                 <h2 className="text-[16px] font-semibold">Comparison Graph</h2>
-                <p><b>You scored 90% percentile</b> which is lower than the average percentile 72% of all the engineers who took this assessment</p>
+                <p><b>You scored {data.percentile}% percentile</b> which is { data.percentile > 72 ? "higher" : "lower" } than the average percentile 72% of all the engineers who took this assessment</p>
               </div>
               
               <div className="flex bg-gray-500/[0.07] p-4 rounded-full">
@@ -80,10 +80,10 @@ export default function Home() {
             
             <div className="relative flex items-center justify-center">
               <Comparison />
-              <div style={{ left: 90 + "%" }} className="absolute w-[2px] h-[90%] top-0 bg-gray-200">
+              <div style={{ left: data.percentile + "%" }} className="absolute w-[2px] h-[90%] top-0 bg-gray-200">
 
               </div>
-              <p style={{ left: 90 -10 + "%" }} className="absolute w-fit p-2 bg-gray-200 top-[45%]">your percentile</p>
+              <p style={{ left: data.percentile -10 + "%" }} className="absolute w-fit p-2 bg-gray-200 top-[45%]">your percentile</p>
             </div>
           </div>
         </div>
@@ -111,13 +111,13 @@ export default function Home() {
             <div className="flex flex-col gap-6">
               <div className="flex justify-between gap-6 items-center">
                 <h2 className="text-[16px] font-semibold">Question Analysis</h2>
-              <p className="text-primary font-bold">12/15</p>
+              <p className="text-primary font-bold">{data.score}/15</p>
               </div>
-              <p><b>You scored 12 question correct out of 15.</b> However it still needs some improvements</p>
+              <p><b>You scored {data.score} question correct out of 15.</b> However it still needs some improvements</p>
             </div>
 
             <div className="w-[150px] h-[150px] mx-auto my-8 realtive flex items-center justify-center">
-              <QuestionsDoughnut />
+              <QuestionsDoughnut score={data.score} />
               <Image src={"/direct-hit.svg"} alt="target-hit" className="absolute" width={32} height={32} />
             </div>
 

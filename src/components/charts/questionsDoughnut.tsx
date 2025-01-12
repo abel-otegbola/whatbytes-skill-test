@@ -5,14 +5,14 @@ Chart.register( ArcElement, Filler, Title, Tooltip, Legend );
 
 import { Doughnut } from 'react-chartjs-2';
 
-export default function QuestionsDoughnut() {
+export default function QuestionsDoughnut({ score }: { score: number }) {
 
 
     const data = {
         labels: ["correct", "incorrect"],
         datasets: [
             {
-                data: [12, 3],
+                data: [score, 15-score],
                 borderColor: [
                     'rgb(44, 54, 250)',
                     "rgba(228, 227, 238, 0.7)"
