@@ -6,7 +6,7 @@ import Image from "next/image"
 function Topbar() {
 
     return (
-        <div className="flex justify-between md:py-6 py-3 p-6 border-b border-gray-500/[0.1]">
+        <div className="flex justify-between md:py-6 py-3 p-4 border-b border-gray-500/[0.1]">
             <div className="flex items-center gap-2">
                 <LogoIcon className="md:w-[30px] w-[20px]" />
                 <h1 className="text-lg font-bold">WhatBytes</h1>

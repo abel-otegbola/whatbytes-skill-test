@@ -13,7 +13,7 @@ export default function Home() {
   const [openModal, setOpenModal] = useState(false)
 
   return (
-    <div className="p-6 md:px-[3%] w-full">
+    <div className="p-4 md:px-[3%] w-full">
       <h1 className="text-md mb-4">Skill Test</h1>
       <div className="flex lg:flex-nowrap flex-wrap gap-6 w-full">
         <div className="lg:w-[60%] w-full flex flex-col gap-6">
@@ -83,7 +83,7 @@ export default function Home() {
               <div style={{ left: data.percentile + "%" }} className="absolute w-[2px] h-[90%] top-0 bg-gray-200">
 
               </div>
-              <p style={{ left: data.percentile -10 + "%" }} className="absolute w-fit p-2 bg-gray-200 top-[45%]">your percentile</p>
+              <p style={{ right: 100 - data.percentile - 10 + "%" }} className="absolute w-fit p-2 bg-gray-200 top-[45%]">your percentile</p>
             </div>
           </div>
         </div>
