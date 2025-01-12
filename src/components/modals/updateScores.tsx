@@ -36,7 +36,6 @@ export default function UpdateScores({ data, setData, setOpenModal, img }: { dat
                     {({
                         values,
                         errors,
-                        touched,
                         handleChange,
                         handleSubmit,
                     }) => (
