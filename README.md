@@ -1,7 +1,7 @@
-# WHATBYTES SKILL TEST PAGE
+# SKILL TEST PAGE
 
 ## Demo
-https://whatbytes-skill-test.vercel.app
+https://skill-test-result.vercel.app
 
 ## Overview
 
@@ -45,12 +45,12 @@ Follow these steps to clone the repository, install dependencies, and run the ap
 First, clone the GitHub repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/abel-otegbola/whatbytes-skill-test.git
+git clone https://github.com/abel-otegbola/skill-test.git
 ```
 
 Navigate into the project directory:
 ```bash
-cd html-skill-test
+cd skill-test
 ```
 
 Install the required dependencies:
