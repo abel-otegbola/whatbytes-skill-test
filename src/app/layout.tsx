@@ -7,7 +7,7 @@ import Sidebar from "@/components/sidebar/sidebar";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Whatsbytes",
+  title: "Skill-test",
   description: "Frontend dashboard challenge",
 };
 
