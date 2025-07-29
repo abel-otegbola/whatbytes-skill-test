@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { ReactElement, useState } from "react";
 import { usePathname } from "next/navigation";
-import { BoundingBoxIcon, BrainIcon, File, FileHtmlIcon, FilesIcon, IdentificationBadgeIcon, MathOperationsIcon } from "@phosphor-icons/react";
+import { BoundingBoxIcon, BrainIcon, FileHtmlIcon, FilesIcon, IdentificationBadgeIcon, MathOperationsIcon } from "@phosphor-icons/react";
 
 type link = {
   id: string,

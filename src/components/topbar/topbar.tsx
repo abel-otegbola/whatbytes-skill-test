@@ -1,6 +1,4 @@
 'use client'
-
-import LogoIcon from "@/assets/icons/logo"
 import Image from "next/image"
 
 function Topbar() {
