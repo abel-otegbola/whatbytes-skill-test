@@ -16,8 +16,8 @@ export default function UpdateScores({ data, setData, setOpenModal, img }: { dat
     const modalRef = useOutsideClick(setOpenModal, false)
 
     return (
-        <div className="fixed top-0 left-0 bg-black/[0.5] w-full h-full flex items-center justify-center z-[100]">
-            <div ref={modalRef} className="md:w-[600px] w-[90%] bg-white flex p-6 flex-col gap-8 rounded-lg">
+        <div className="fixed top-0 left-0 bg-[#000]/[0.9] w-full h-full flex items-center justify-center z-[100]">
+            <div ref={modalRef} className="md:w-[600px] w-[90%] bg-[#000] border border-gray-500/[0.2] flex p-6 flex-col gap-8 rounded-lg">
                 <div className="w-full flex justify-between gap-6">
                     <h1 className="font-bold text-[16px]">Update Scores</h1>
                     {img}

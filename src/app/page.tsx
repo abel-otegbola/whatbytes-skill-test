@@ -13,12 +13,11 @@ export default function Home() {
   const [openModal, setOpenModal] = useState(false)
 
   return (
-    <div className="p-4 md:px-[3%] w-full">
-      <h1 className="text-md mb-4">Skill Test</h1>
-      <div className="flex lg:flex-nowrap flex-wrap gap-6 w-full">
-        <div className="lg:w-[60%] w-full flex flex-col gap-6">
+    <div className="py-3 pl-3 w-full bg-[#000]/[0.4]">
+      <div className="flex lg:flex-nowrap flex-wrap gap-3 w-full">
+        <div className="lg:w-[60%] w-full flex flex-col gap-3">
 
-          <div className="flex md:flex-nowrap flex-wrap p-4 gap-6 items-center border border-gray-500/[0.2] rounded-lg">
+          <div className="flex md:flex-nowrap flex-wrap p-4 gap-6 bg-[#000]/[0.5] items-center border border-gray-500/[0.2] rounded-lg">
             <HTMLIcon className="md:w-[64px] w-[32px]" />
             <div className="flex-1">
               <h2 className="font-bold mb-4 md:text-[16px] text-[14px]">Hyper Text Markup Language</h2>
@@ -29,7 +28,7 @@ export default function Home() {
             <Button onClick={() => setOpenModal(true)}>Update</Button>
           </div>
 
-          <div className="p-4 border border-gray-500/[0.2] rounded-lg">
+          <div className="p-4 border border-gray-500/[0.2] rounded-lg bg-[#000]/[0.5]">
             <h2 className="text-[16px] font-semibold">Quick Statistics</h2>
 
             <div className="grid grid-cols-3">
@@ -65,7 +64,7 @@ export default function Home() {
           </div>
           
 
-          <div className="p-4 border border-gray-500/[0.2] rounded-lg">
+          <div className="p-4 border border-gray-500/[0.2] rounded-lg bg-[#000]/[0.5]">
             <div className="flex justify-between gap-6 items-center mb-6">
               <div className="flex flex-col gap-6">
                 <h2 className="text-[16px] font-semibold">Comparison Graph</h2>
@@ -80,16 +79,16 @@ export default function Home() {
             
             <div className="relative flex items-center justify-center">
               <Comparison />
-              <div style={{ left: data.percentile + "%" }} className="absolute w-[2px] h-[90%] top-0 bg-gray-200">
+              <div style={{ left: data.percentile + "%" }} className="absolute w-[2px] h-[90%] top-0 bg-gray-700">
 
               </div>
-              <p style={{ right: 100 - data.percentile - 10 + "%" }} className="absolute w-fit p-2 bg-gray-200 top-[45%]">your percentile</p>
+              <p style={{ right: 100 - data.percentile - 10 + "%" }} className="absolute w-fit p-2 px-4 border border-gray-500/[0.2] rounded bg-[#000]/[0.8] backdrop-blur-sm text-[10px] top-[45%]">your percentile</p>
             </div>
           </div>
         </div>
 
-        <div className="lg:w-[35%] w-full flex flex-col gap-6">
-          <div className="md:p-[5%] p-6 border border-gray-500/[0.2] rounded-lg">
+        <div className="lg:w-[35%] w-full flex flex-col gap-3 ">
+          <div className="md:p-[5%] p-6 border border-gray-500/[0.2] rounded-lg bg-[#000]/[0.5]">
             <h2 className="text-[16px] font-semibold mb-4">Syllabus Wise Analysis</h2>
 
             <div className="flex flex-col">
@@ -107,7 +106,7 @@ export default function Home() {
             </div>
           </div> 
           
-          <div className="p-4 border border-gray-500/[0.2] rounded-lg">
+          <div className="p-4 border border-gray-500/[0.2] rounded-lg bg-[#000]/[0.5]">
             <div className="flex flex-col gap-6">
               <div className="flex justify-between gap-6 items-center">
                 <h2 className="text-[16px] font-semibold">Question Analysis</h2>

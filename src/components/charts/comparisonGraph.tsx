@@ -13,9 +13,10 @@ export default function Comparison() {
         labels: [0, 25, 50, 75, 100],
         datasets: [
             {
-                data: [2, 9, 28, 4, 2],
-                borderColor: "rgb(96, 70, 103)",
-                fill: false,
+                data: [0, 2, 4, 3, 5],
+                borderColor: "rgba(202, 9, 255, 1)",
+                backgroundColor: "rgba(202, 9, 255, 0.08)",
+                fill: true,
             }
         ]
     }

@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased text-[14px] text-[#101012]`}
+        className={`${inter.className} antialiased text-[14px] text-[#DDE2EB] bg-[#1B1B1D]`}
       >
         <Topbar />
-        <div className="flex w-[100%]">
+        <div className="flex w-[100%] h-full">
           <Sidebar />
           <div className="w-full">
             {children}
